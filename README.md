@@ -1,276 +1,112 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Github, 
-  Mail, 
-  ExternalLink, 
-  Cpu, 
-  Code2, 
-  Globe, 
-  Smartphone, 
-  Database, 
-  Layers, 
-  ChevronRight,
-  Terminal,
-  Zap,
-  Coffee
-} from 'lucide-react';
+<div align="center">
 
-const App = () => {
-  const [activeTab, setActiveTab] = useState('all');
-  const [scrolled, setScrolled] = useState(false);
+# 🚀 Welcome to the Digital Workspace of Nabeel Hussain Akhtar
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+**Java Full Stack Developer | AI Builder | SuperApp Architect**
 
-  const projects = [
-    {
-      title: "N&L Connect",
-      type: "SuperApp",
-      category: "mobile",
-      desc: "An ambitious mobile ecosystem integrating Chat, Music, AI, and Gaming with a custom skeuomorphic UI.",
-      link: "https://nl-connect.pages.dev/home",
-      tags: ["React", "AI", "Cloudflare"],
-      color: "from-cyan-500 to-blue-500"
-    },
-    {
-      title: "Bites N' More",
-      type: "Full Stack ERP",
-      category: "web",
-      desc: "Complete restaurant automation system: Customer App, Kitchen Display, Admin Portal, and Rider Tracking.",
-      link: "https://bnm-customer.pages.dev/",
-      tags: ["Java", "Spring Boot", "React"],
-      color: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Ramzan 2026",
-      type: "Utility App",
-      category: "web",
-      desc: "Comprehensive Islamic utility with prayer times, Quran player, and live Mecca/Madina feeds.",
-      link: "https://ramzan2026.vercel.app/",
-      tags: ["Vite", "Tailwind", "Firebase"],
-      color: "from-emerald-500 to-teal-600"
-    },
-    {
-      title: "Time Machine",
-      type: "Python Utility",
-      category: "tools",
-      desc: "Automated decryption tool for recovering gallery files using hex-key manipulation.",
-      link: "#",
-      tags: ["Python", "Automation"],
-      color: "from-purple-500 to-indigo-600"
-    }
-  ];
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=Building+N%26L+Connect+SuperApp;3.1%2B+Years+Java+Full+Stack+Expertise;Crafting+Aesthetic+%26+Skeuomorphic+UIs;Architecting+Scalable+Microservices)](https://git.io/typing-svg)
 
-  const skills = [
-    { name: "Java 8-17", icon: <Code2 size={20} />, level: "Expert" },
-    { name: "Spring Boot", icon: <Cpu size={20} />, level: "Expert" },
-    { name: "React.js", icon: <Layers size={20} />, level: "Advanced" },
-    { name: "Microservices", icon: <Zap size={20} />, level: "Advanced" },
-    { name: "PostgreSQL", icon: <Database size={20} />, level: "Advanced" },
-    { name: "Docker/K8s", icon: <Terminal size={20} />, level: "Intermediate" },
-  ];
+*“I don’t just write code — I build complete experiences and ecosystems.”*
 
-  const filteredProjects = activeTab === 'all' ? projects : projects.filter(p => p.category === activeTab);
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=NabeelHussainAkhtar&color=00F7FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
+</p>
 
-  return (
-    <div className="min-h-screen bg-[#0A0F1C] text-slate-200 font-sans selection:bg-cyan-500/30">
-      {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0A0F1C]/80 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
-        <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/20">
-              <span className="font-bold text-white text-sm">N</span>
-            </div>
-            <span className="font-bold tracking-tight text-xl hidden sm:block">Nabeel Akhtar</span>
-          </div>
-          <div className="flex items-center space-x-8 text-sm font-medium">
-            <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
-            <a href="#projects" className="hover:text-cyan-400 transition-colors">Projects</a>
-            <a href="#contact" className="px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all active:scale-95">Connect</a>
-          </div>
-        </div>
-      </nav>
+<p align="center">
+  <a href="mailto:nabeelhussain2k02@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://github.com/NabeelHussainAkhtar"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <img src="https://img.shields.io/badge/Location-Bengaluru-00599C?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location" />
+</p>
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-cyan-500/10 to-transparent blur-3xl rounded-full opacity-30 pointer-events-none"></div>
-        <div className="max-w-6xl mx-auto px-6 relative">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold mb-6 animate-pulse">
-              <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
-              <span>AVAILABLE FOR NEW OPPORTUNITIES</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-              Architecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">SuperApps</span> & Digital Ecosystems.
-            </h1>
-            <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl">
-              I am a Java Full Stack Developer & AI Builder based in Bengaluru. I specialize in building scalable microservices and visually stunning user experiences with a touch of skeuomorphism.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="#projects" className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-xl shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all hover:-translate-y-1 active:scale-95 flex items-center">
-                View My Work <ChevronRight className="ml-2" size={18} />
-              </a>
-              <a href="https://github.com/NabeelHussainAkhtar" target="_blank" className="px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 font-bold rounded-xl transition-all flex items-center">
-                <Github className="mr-2" size={18} /> GitHub Profile
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+</div>
 
-      {/* Stats/Badge Section */}
-      <section className="py-12 border-y border-white/5 bg-white/2">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div className="text-3xl font-bold text-white">3.1+</div>
-            <div className="text-slate-500 text-sm mt-1">Years Experience</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-white">15+</div>
-            <div className="text-slate-500 text-sm mt-1">Projects Built</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-white">10+</div>
-            <div className="text-slate-500 text-sm mt-1">Microservices</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-white">8-12</div>
-            <div className="text-slate-500 text-sm mt-1">LPA Goal</div>
-          </div>
-        </div>
-      </section>
+---
 
-      {/* Projects Section */}
-      <section id="projects" className="py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Featured Work</h2>
-              <p className="text-slate-400">Hand-picked selection of full-stack ecosystems.</p>
-            </div>
-            <div className="flex p-1 bg-white/5 rounded-xl border border-white/10">
-              {['all', 'web', 'mobile', 'tools'].map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-2 rounded-lg text-sm font-medium capitalize transition-all ${activeTab === tab ? 'bg-cyan-500 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
-          </div>
+## 🧠 The Architect Behind the Code
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {filteredProjects.map((project, idx) => (
-              <div key={idx} className="group relative bg-[#131B2B] border border-white/5 rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2">
-                <div className="aspect-video bg-slate-800 relative overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20`}></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    {project.category === 'mobile' ? <Smartphone size={60} className="text-white/20" /> : <Globe size={60} className="text-white/20" />}
-                  </div>
-                </div>
-                <div className="p-8">
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <span className="text-xs font-bold text-cyan-400 uppercase tracking-widest">{project.type}</span>
-                      <h3 className="text-2xl font-bold mt-1">{project.title}</h3>
-                    </div>
-                    <a href={project.link} target="_blank" className="p-2 bg-white/5 rounded-full hover:bg-cyan-500 transition-colors group/btn">
-                      <ExternalLink size={20} className="group-hover/btn:scale-110 transition-transform" />
-                    </a>
-                  </div>
-                  <p className="text-slate-400 mb-6 line-clamp-2">{project.desc}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map(tag => (
-                      <span key={tag} className="px-3 py-1 bg-white/5 rounded-md text-xs font-medium text-slate-300 border border-white/10">{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+I am a **Java Full Stack Developer** with **3.1+ years of experience** engineering highly scalable, secure enterprise applications and complete digital ecosystems. My philosophy bridges hardcore backend architecture (distributed systems, real-time event-driven infrastructure) with meticulous, visually stunning frontend design.
 
-      {/* Tech Stack Section */}
-      <section id="skills" className="py-24 bg-white/2">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Technical Arsenal</h2>
-              <p className="text-slate-400 mb-8 leading-relaxed">
-                I build robust, performance-optimized backends using Java and Spring Cloud, while crafting intuitive frontends with React and Tailwind. My background includes building full CI/CD pipelines and managing containerized deployments.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, idx) => (
-                  <div key={idx} className="p-4 bg-[#131B2B] rounded-2xl border border-white/5 flex items-center space-x-3">
-                    <div className="p-2 bg-cyan-500/10 rounded-lg text-cyan-400">
-                      {skill.icon}
-                    </div>
-                    <div>
-                      <div className="font-bold text-sm">{skill.name}</div>
-                      <div className="text-[10px] text-slate-500 font-bold uppercase">{skill.level}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="grid grid-cols-3 gap-4 rotate-3">
-              {[...Array(9)].map((_, i) => (
-                <div key={i} className={`aspect-square rounded-2xl bg-[#131B2B] border border-white/5 flex items-center justify-center transform ${i % 2 === 0 ? 'translate-y-4' : ''}`}>
-                  <div className="w-1/2 h-1/2 bg-white/5 rounded-full blur-xl animate-pulse"></div>
-                </div>
-              ))}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="p-8 bg-[#0A0F1C] border border-cyan-500/30 rounded-3xl shadow-2xl shadow-cyan-500/20 backdrop-blur-xl">
-                  <div className="text-4xl">👨‍💻</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+- ⚡ **Availability:** Immediate Joiner ready to drive high-impact technical initiatives.
+- 🔥 **Current Obsession:** Integrating AI models into daily utilities and scaling my flagship SuperApp, **N&L Connect**.
+- 💡 **Design Language:** Skeuomorphic UI/UX, aesthetic minimalism, and 3D web elements.
+- ⚙️ **Core Engineering:** Microservices, Kafka messaging, robust Java pipelines, and automated POS/ERP solutions for small businesses.
 
-      {/* Contact Section */}
-      <section id="contact" className="py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-gradient-to-br from-cyan-600 to-blue-700 rounded-[3rem] p-12 text-center relative overflow-hidden shadow-2xl shadow-cyan-500/20">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-            <div className="relative z-10">
-              <h2 className="text-4xl font-extrabold text-white mb-6">Let's build the next SuperApp.</h2>
-              <p className="text-cyan-100 mb-10 text-lg opacity-90">Ready to bring enterprise-grade Java engineering and aesthetic design to your team.</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <a href="mailto:nabeelhussain2k02@gmail.com" className="px-8 py-4 bg-white text-blue-700 font-bold rounded-2xl flex items-center shadow-lg hover:scale-105 transition-transform active:scale-95">
-                  <Mail className="mr-2" size={18} /> Send an Email
-                </a>
-                <a href="https://github.com/NabeelHussainAkhtar" className="px-8 py-4 bg-black/20 hover:bg-black/30 border border-white/20 text-white font-bold rounded-2xl flex items-center transition-all">
-                  <Github className="mr-2" size={18} /> GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+---
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-slate-500 text-sm">
-            © 2024 Nabeel Hussain Akhtar. Built with React & Tailwind.
-          </div>
-          <div className="flex space-x-6">
-            <a href="#" className="p-2 bg-white/5 rounded-lg hover:text-cyan-400 transition-colors"><Github size={20} /></a>
-            <a href="#" className="p-2 bg-white/5 rounded-lg hover:text-cyan-400 transition-colors"><Mail size={20} /></a>
-            <a href="#" className="p-2 bg-white/5 rounded-lg hover:text-cyan-400 transition-colors"><Coffee size={20} /></a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
+## 🛠 Tech Arsenal
 
-export default App;
+<div align="center">
+  <h3>Frontend & UI/UX</h3>
+  <img src="https://skillicons.dev/icons?i=js,ts,react,vue,html,css,tailwind,vite,bootstrap" />
+  
+  <h3>Backend & Database</h3>
+  <img src="https://skillicons.dev/icons?i=java,spring,python,mysql,postgres,mongodb,redis,firebase" />
+  
+  <h3>Cloud, DevOps & Architecture</h3>
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,jenkins,kafka,git,linux,cloudflare" />
+</div>
+
+<br>
+
+> **Advanced Capabilities:** Microservices • REST APIs • Eureka Server • API Gateway • Saga Patterns • CI/CD Pipelines • Spring Security (JWT, RBAC) • Zipkin • ELK Stack • OAuth2
+
+---
+
+## 🚀 Featured Ecosystems & Projects
+
+### 🌟 N&L Connect (The SuperApp)
+> **One App. Chat • Music • AI • Gaming • Social**
+An ambitious, mobile-first Super App pushing the boundaries of aesthetic, skeuomorphic design. It natively integrates real-time media players, advanced AI chat modules, and seamless social connectivity.
+🔗 **Live:** [N&L Connect Web/Android](https://nl-connect.pages.dev/home)
+
+### 🍔 Bites N' More (End-to-End Restaurant ERP/POS)
+A complete, automated business management ecosystem powered by a robust **Java Spring Boot Backend** and a dynamic **React + Tailwind Frontend**.
+- 🛒 **Customer Portal:** [Web & APK](https://bnm-customer.pages.dev/)
+- 👨‍🍳 **Kitchen Display System (KDS):** [Live App](https://bnm-kitchen.pages.dev/)
+- 👑 **Admin Dashboard:** [Live App](https://bnm-admin.pages.dev/)
+- 🛵 **Rider/Delivery Tracking:** [Live App](https://bnm-rider.pages.dev/)
+
+### 🕌 Islamic Digital Initiatives
+- **Ramzan 2026 App:** A comprehensive utility featuring exact timetables, Sahih Hadees library, a sleek Quran Player, and Mecca/Madina Live feeds. [View Live](https://ramzan2026.vercel.app/)
+- **Madrasa Darut Taleem Wat Tarbiyah:** A multilingual (Urdu-first, RTL), beautifully animated educational portal. Built with Vanilla JS, Bootstrap 5, and AOS animations. Integrated with **Firebase** for dynamic registration and secure admin controls. [View Live](https://daruttaleemwattarbiyah.netlify.app/)
+
+### 🛠 Utility & Business Solutions
+- **Time Machine (Decryption Tool):** Engineered a web-based automated decryption utility using Python and hex keys to recover and decode mobile gallery files (`.sa` and `.sav`).
+- **Bouquet Bliss:** Designed and developed an aesthetic, visually rich frontend interface and custom digital thank-you cards for a modern floral business. 
+- **lastminute.com Clone:** Architected a high-traffic travel booking platform featuring **10+ microservices**, event-driven workflows via **Kafka**, and **Elasticsearch** filtering.
+
+---
+
+## 🏆 GitHub Analytics & Contributions
+
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy-theta-seven.vercel.app/?username=NabeelHussainAkhtar&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&row=1&column=6" alt="Trophies" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=NabeelHussainAkhtar&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NabeelHussainAkhtar&theme=tokyonight&hide_border=true&background=0D1117" width="48%" />
+</div>
+<br>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NabeelHussainAkhtar&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="60%" />
+</div>
+
+<br>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NabeelHussainAkhtar/NabeelHussainAkhtar/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NabeelHussainAkhtar/NabeelHussainAkhtar/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/NabeelHussainAkhtar/NabeelHussainAkhtar/output/github-contribution-grid-snake.svg" width="100%">
+  </picture>
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00F7FF&height=100&section=footer" width="100%"/>
+</div>
