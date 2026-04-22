@@ -54,13 +54,6 @@ A complete, automated management system developed with a robust **Java Backend**
 - 👑 **Admin Dashboard:** [Live App](https://bnm-admin.pages.dev/) | [Alternative Link](https://bites-n-more-u439.vercel.app/)
 - 🛵 **Rider/Delivery Tracking:** [Live App](https://bnm-rider.pages.dev/)
 
-### ✈️ lastminute.com Clone (Key Architectural Project)
-A high-traffic Travel & Hotel Booking Platform showcasing enterprise-grade backend skills.
-- Built **10+ microservices** (User, Hotel, Inventory, Booking, Payment, Notifications).
-- Designed event-driven workflows using **Kafka** for sync and distributed transactions using **Saga patterns**.
-- Implemented **Elasticsearch** for advanced filtering and **Redis** caching (reduced load times by 45%).
-- Automated deployments via **CI/CD**, secured by **Spring Security + JWT**, and monitored via **Zipkin/ELK**.
-
 ### 🕌 Islamic Digital Initiatives
 - **Ramzan 2026 App:** A comprehensive utility app featuring timetables, Iftar/Sehri timings, a library of Sahih Hadees, a Quran Player, and Mecca/Madina Live feeds.
   🔗 **Live Link:** [Ramzan 2026](https://ramzan2026.vercel.app/)
