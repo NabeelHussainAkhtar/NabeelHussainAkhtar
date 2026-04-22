@@ -81,10 +81,12 @@ A complete, automated business management ecosystem powered by a robust **Java S
 ## 🏆 GitHub Analytics & Contributions
 
 <div align="center">
+  <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=NabeelHussainAkhtar&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
-</a>
+    <img src="https://github-profile-trophy-one-azure.vercel.app/?username=NabeelHussainAkhtar&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15&row=1&column=6" alt="Trophies" />
+  </a>
 </div>
+
 <br>
 
 <div align="center">
