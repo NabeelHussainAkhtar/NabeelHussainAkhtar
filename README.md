@@ -95,7 +95,7 @@ A complete, automated business management ecosystem powered by a robust **Java S
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NabeelHussainAkhtar&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" width="60%" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=NabeelHussainAkhtar&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="WakaTime Stats" />
 </div>
 
 <br>
